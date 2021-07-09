@@ -1,0 +1,420 @@
+@import url("font/primary-iran-yekan.css");
+@import url("font/secondary-iran-yekan.css");
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+html,
+body {
+	height: 100%;
+	}
+body {
+	line-height: 24px;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	visibility: visible;
+	font-family: "primary-font", "segoe ui", "tahoma";
+	direction: rtl;
+	color: #222222;
+
+
+}
+.ltr-text {
+	display: inline-block;
+	direction: ltr;
+}
+.primary-font {
+	font-family: "primary-font", "segoe ui", "tahoma" !important;
+}
+.secondary-font {
+	font-family: "secondary-font", "primary-font", "segoe ui", "tahoma" !important;
+}
+.fa {
+	vertical-align: middle;
+}
+.fa-star-half,
+.fa-star-half-o {
+	-webkit-transform: rotateY(180deg);
+	-moz-transform: rotateY(180deg);
+	-ms-transform: rotateY(180deg);
+	-o-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: 400;
+	margin-top: 0;
+	line-height: 1.85;
+	font-family: "secondary-font", "primary-font", "segoe ui", "tahoma";
+}
+h1 {
+	font-size: 48px;
+	font-weight: 700;
+}
+h2 {
+	font-size: 36px;
+}
+h3 {
+	font-size: 30px;
+}
+h4 {
+	font-size: 16px;
+	font-weight: 700;
+}
+h5 {
+	font-size: 14px;
+}
+h6 {
+	font-size: 12px;
+}
+p {
+	line-height: 2;
+}
+p:last-child {
+	margin-bottom: 0;
+}
+a,
+button {
+	color: inherit;
+	line-height: inherit;
+	text-decoration: none;
+	cursor: pointer;
+}
+a,
+button,
+img,
+input,
+span {
+	transition: all 0.3s ease 0s;
+}
+*:focus {
+	outline: none !important;
+}
+a:focus {
+	color: inherit;
+	outline: none;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+button,
+input[type="submit"] {
+	cursor: pointer;
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
+ul {
+	list-style: outside none none;
+	margin: 0;
+	padding: 0;
+}
+figure {
+	padding: 0;
+	margin: 0;
+}
+.tooltip {
+	font-family: inherit;
+	font-size: 12px;
+}
+
+.account_page_bg {
+	background: #F5F5F9;
+	padding: 60px 0 133px;
+}
+@media only screen and (max-width: 767px) {
+	.account_page_bg {
+		padding: 60px 0 105px;
+	}
+}
+
+/* منوی صفحه ی پروفایل*/
+@media only screen and (max-width: 767px) {
+	.dashboard_tab_button {
+		margin-bottom: 20px;
+	}
+}
+/* @media only screen and (max-width: 1200px) {
+	.dashboard_tab_button  ul li a i{
+		font-size: 20px;
+		position: absolute;
+		right: 43px;
+		margin-top: 5px;
+	}
+} */
+
+.dashboard_tab_button{
+	background-color: white;
+    border-radius: 7px;
+    border: 1px solid #ededed;
+}
+.dashboard_tab_button ul  {
+
+	height: 570px;
+}
+.dashboard_tab_button ul li {
+	margin-bottom: -38px;
+	line-height: 1.85;
+	margin-top: 40px;
+}
+.dashboard_tab_button ul li a {
+	font-size: 16px;
+	color: #000;
+	font-weight: 500;
+	text-align: center;
+
+}
+  .dashboard_tab_button ul li #profilepic{
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+  }
+.dashboard_tab_button ul li i{
+	font-size: 29px;
+    position: absolute;
+    right: 60px;
+
+	}
+
+.dashboard_tab_button ul li a:hover {
+
+	color: #c40316;
+}
+.dashboard_tab_button ul li  .active{
+	color: #c40316;
+}
+
+/*محتوای صفحه ی پروفایل*/
+.dashboard_content{
+	background-color: white;
+	border-radius: 7px;
+    border: 1px solid #ededed;
+}
+.dashboard_content form{
+	padding: 10px;
+}
+.dashboard_content h3 {
+	font-size: 22px;
+	font-weight: 500;
+	margin-bottom: 15px;
+	padding: 5px;
+}
+.dashboard_content h4 {
+	font-size: 20px;
+	font-weight: 500;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+.dashboard_content button {
+	color: #000;
+	font-weight: 500;
+	border: 0;
+
+	padding: 0 25px;
+	height: 35px;
+	line-height: 35px;
+	border-radius: 4px;
+
+}
+
+.dashboard_content p a {
+	color: #c40316;
+	font-weight: 500;
+}
+.dashboard_content .tab-pane{
+	padding: 7px;
+}
+.table-responsive table thead {
+	background: #ebebeb;
+}
+.table-responsive table thead tr th {
+	text-align: center;
+}
+.table-responsive table tbody tr td {
+	border-left: 1px solid #ebebeb;
+	font-weight: 500;
+	font-size: 14px;
+	text-align: center;
+	min-width: 150px;
+	line-height: 1.85;
+}
+.table-responsive table tbody tr td:last-child {
+	border-left: 0;
+}
+.dashboard_content .table-responsive table tbody tr td:last-child a {
+	color: #c40316;
+}
+.table-responsive .table {
+	border-right: 1px solid #ebebeb;
+	border-bottom: 1px solid #ebebeb;
+	border-left: 1px solid #ebebeb;
+}
+.dashboard_content address {
+	font-weight: 500;
+	line-height: 2;
+}
+.dashboard_content #address a {
+	line-height: 2;
+}
+.input-radio span input[type="radio"],
+.account_login_form form span input[type="checkbox"] {
+	width: 15px;
+	height: 15px;
+	margin-left: 2px;
+	position: relative;
+	top: 2px;
+}
+.input-radio span {
+	font-weight: 500;
+	padding-left: 10px;
+}
+.account_login_form form > input {
+	border: 1px solid #ddd;
+	background: none;
+	height: 40px;
+	margin-bottom: 20px;
+	width: 100%;
+	padding: 0 20px;
+	color: #222222;
+}
+.account_login_form form span.custom_checkbox {
+	display: flex;
+}
+.account_login_form form span.custom_checkbox input {
+	vertical-align: middle;
+	top: 0;
+	margin-top: 1px;
+	margin-left: 7px;
+}
+.account_login_form form span.custom_checkbox label {
+	margin-bottom: 0;
+}
+.account_login_form form > .example {
+	display: block;
+	margin-top: -15px;
+}
+.account_login_form form span.custom_checkbox label em {
+	margin-top: 3px;
+	display: block;
+	font-size: 13px;
+}
+/* ریسپانسیو منوی پروفایل کاربری */
+@media only screen and (min-width:768px) and (max-width: 1200px) {
+	.dashboard_tab_button  ul li a i{
+		font-size: 20px;
+		position: absolute;
+		right: 34px;
+		margin-top: 5px;
+	}
+}
+/* استایل علاقه مندی ها */
+.favoritegoods{
+	height: 57px;
+    width: 57px;
+}
+/*استایل جدول ادرس ها*/
+.addresstable{
+	border: 2px solid  #ced4da;
+	margin-top: 10px;
+	border-radius: 5px;
+	display: none;
+}
+.addresstable .tableaddressrow{
+	padding: 10px;
+}
+.currentAddress{
+	border: 2px solid  #ced4da;
+	border-radius: 5px;
+}
+.addingaddressbtn{
+	margin-top: 5px;
+	background-color: #ededed;
+}
+
+.heading-box h2{
+width:100%; color: red;
+}
+/*استایل جدول جزییات سفارش*/
+.tblorderdetail {
+    display: none;
+	background-color: #F5F5F9;
+ }
+
+.tblorderdetail.open {
+        display: table-row;
+    }
+
+.tblOrderNested {
+		width: 100%;
+	}
+
+.tblOrderNestedDeliveryTitle td {
+		padding: 5px 10px;
+		background-color: #e4e4e4;
+		font-weight: bold;
+		color: #777777;
+	}
+
+.tblOrderNestedDelivery td {
+		padding: 5px 10px;
+	}
+
+.tblOrderNested .tblOrderNestedColHead {
+		background-color: #e4e4e4;
+		color: #818381;
+		padding: 5px;
+		border: solid 1px #d9d9d9;
+	}
+
+.tblOrderNested tr td {
+		background-color: white;
+	}
+
+.tblOrderNested .tblOrderNestedPrdName .desc a {
+		max-width: 220px;
+		display: inline-block;
+	}
+
+.tblOrderNested .tblOrderNestedPrdName .desc {
+		padding: 10px;
+		text-align: center;
+	}
+
+.tblOrderNested .tblOrderNestedPrdName .desc p {
+			margin: 0;
+		}
+
+.tblOrderNested .tblOrderNestedPrdName .desc .color i {
+			width: 25px;
+			height: 25px;
+			display: inline-block;
+			border-radius: 100%;
+			vertical-align: middle;
+			border: solid 1px #e4e4e4;
+		}
+
+.tblOrderRow .tblOrderCol.sended {
+		background-color: #00c853;
+		color: white;
+	}
+
+.tblOrderRow .tblOrderCol.reject {
+		background-color: #f50057;
+		color: white;
+	}
+
